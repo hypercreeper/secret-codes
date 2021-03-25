@@ -1,0 +1,17 @@
+<html>
+<input id="inn" style="height: 20%; width: 50%;" placeholder="Enter text to be translated!" onkeyup="donow()">
+<br><br><br>
+<input id="outt" style="font-family: Marlett; height: 20%; width: 50%;" placeholder = "Output" onkeyup="nodonow()">
+<script>
+function donow() {
+var inn = document.getElementById("inn");
+var outt = document.getElementById("outt");
+outt.value = inn.value;
+}
+function nodonow() {
+var inn = document.getElementById("inn");
+var outt = document.getElementById("outt");
+inn.value = outt.value;
+}
+</script>
+</html>
