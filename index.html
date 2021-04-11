@@ -1,17 +1,66 @@
 <html>
-<input id="inn" style="height: 20%; width: 50%;" placeholder="Enter text to be translated!" onkeyup="donow()">
+<input id="input" onkeydown="donow()" style="width: 500px;">
 <br><br><br>
-<input id="outt" style="font-family: Marlett; height: 20%; width: 50%;" placeholder = "Output" onkeyup="nodonow()">
+<input id="output" onkeydown="donownow()" style="width: 500px;" >
 <script>
 function donow() {
-var inn = document.getElementById("inn");
-var outt = document.getElementById("outt");
-outt.value = inn.value;
+var tr = document.getElementById("input").value;
+var ft1 = tr.replaceAll("a", "😀");
+var ft2 = ft1.replaceAll("c", "😁");
+var ft3 = ft2.replaceAll("d", "😂");
+var ft4 = ft3.replaceAll("e", "🤣");
+var ft5 = ft4.replaceAll("f", "😃");
+var ft6 = ft5.replaceAll("g", "😄");
+var ft7 = ft6.replaceAll("h", "😅");
+var ft8 = ft7.replaceAll("i", "😆");
+var ft9 = ft8.replaceAll("j", "😉");
+var ft10 = ft9.replaceAll("k", "😊");
+var ft11 = ft10.replaceAll("l", "😋");
+var ft12 = ft11.replaceAll("m", "😎");
+var ft13 = ft12.replaceAll("b", "😥");
+var ft14 = ft13.replaceAll("n", "😍");
+var ft15 = ft14.replaceAll("o", "😘");
+var ft16 = ft15.replaceAll("p", "🥰");
+var ft17 = ft16.replaceAll("q", "😗");
+var ft18 = ft17.replaceAll("r", "😙");
+var ft19 = ft18.replaceAll("s", "😚");
+var ft20 = ft19.replaceAll("t", "😴");
+var ft21 = ft20.replaceAll("u", "🙂");
+var ft22 = ft21.replaceAll("v", "🤗");
+var ft23 = ft22.replaceAll("w", "🤩");
+var ft24 = ft23.replaceAll("x", "🤔");
+var ft25 = ft24.replaceAll("y", "🤨");
+var ft26 = ft25.replaceAll("z", "😐");
+document.getElementById("output").value = ft26;
 }
-function nodonow() {
-var inn = document.getElementById("inn");
-var outt = document.getElementById("outt");
-inn.value = outt.value;
+function donownow() {
+var tr = document.getElementById("output").value;
+var ft1 = tr.replaceAll("😀", "a");
+var ft2 = ft1.replaceAll("😁", "c");
+var ft3 = ft2.replaceAll("😂", "d");
+var ft4 = ft3.replaceAll("🤣", "e");
+var ft5 = ft4.replaceAll("😃", "f");
+var ft6 = ft5.replaceAll("😄", "g");
+var ft7 = ft6.replaceAll("😅", "h");
+var ft8 = ft7.replaceAll("😆", "i");
+var ft9 = ft8.replaceAll("😉", "j");
+var ft10 = ft9.replaceAll("😊", "k");
+var ft11 = ft10.replaceAll("😋", "l");
+var ft12 = ft11.replaceAll("😎", "m");
+var ft13 = ft12.replaceAll("😥", "b");
+var ft14 = ft13.replaceAll("😍", "n");
+var ft15 = ft14.replaceAll("😘", "o");
+var ft16 = ft15.replaceAll("🥰", "p");
+var ft17 = ft16.replaceAll("😗", "q");
+var ft18 = ft17.replaceAll("😙", "r");
+var ft19 = ft18.replaceAll("😚", "s");
+var ft20 = ft19.replaceAll("😴", "t");
+var ft21 = ft20.replaceAll("🙂", "u");
+var ft22 = ft21.replaceAll("🤗", "v");
+var ft23 = ft22.replaceAll("🤩", "w");
+var ft24 = ft23.replaceAll("🤔", "x");
+var ft25 = ft24.replaceAll("🤨", "y");
+var ft26 = ft25.replaceAll("😐", "z");
+document.getElementById("input").value = ft26;
 }
 </script>
-</html>
