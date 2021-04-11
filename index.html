@@ -1,7 +1,7 @@
 <html>
-<input id="input" onkeydown="donow()" style="width: 500px;">
+<input id="input" onkeydown="donow()" onkeyup="donow()" style="width: 500px;">
 <br><br><br>
-<input id="output" onkeydown="donownow()" style="width: 500px;" >
+<input id="output" onkeydown="donownow()" onkeyup="donownow()" style="width: 500px;" >
 <script>
 function donow() {
 var tr = document.getElementById("input").value;
@@ -31,7 +31,25 @@ var ft23 = ft22.replaceAll("w", "🤩");
 var ft24 = ft23.replaceAll("x", "🤔");
 var ft25 = ft24.replaceAll("y", "🤨");
 var ft26 = ft25.replaceAll("z", "😐");
-document.getElementById("output").value = ft26;
+var ft27 = ft26.replaceAll("1", "1️⃣");
+var ft28 = ft27.replaceAll("2", "2️⃣");
+var ft29 = ft28.replaceAll("3", "3️⃣");
+var ft30 = ft29.replaceAll("4", "4️⃣");
+var ft31 = ft30.replaceAll("5", "5️⃣");
+var ft32 = ft31.replaceAll("6", "6️⃣");
+var ft33 = ft32.replaceAll("7", "7️⃣");
+var ft34 = ft33.replaceAll("8", "8️⃣");
+var ft35 = ft34.replaceAll("9", "9️⃣");
+var ft36 = ft35.replaceAll("0", "0️⃣");
+var ft37 = ft36.replaceAll("!", "❗");
+var ft38 = ft37.replaceAll("?", "❓");
+var ft39 = ft38.replaceAll("-", "👎");
+var ft40 = ft39.replaceAll("+", "👍");
+var ft41 = ft40.replaceAll(".", "⚫");
+var ft42 = ft41.replaceAll(",", "⚪");
+var ft43 = ft41.replaceAll("=", "💬");
+
+document.getElementById("output").value = ft43;
 }
 function donownow() {
 var tr = document.getElementById("output").value;
@@ -61,6 +79,24 @@ var ft23 = ft22.replaceAll("🤩", "w");
 var ft24 = ft23.replaceAll("🤔", "x");
 var ft25 = ft24.replaceAll("🤨", "y");
 var ft26 = ft25.replaceAll("😐", "z");
-document.getElementById("input").value = ft26;
+var ft27 = ft26.replaceAll("1️⃣", "1");
+var ft28 = ft27.replaceAll("2️⃣", "2");
+var ft29 = ft28.replaceAll("3️⃣", "3");
+var ft30 = ft29.replaceAll("4️⃣", "4");
+var ft31 = ft30.replaceAll("5️⃣", "5");
+var ft32 = ft31.replaceAll("6️⃣", "6");
+var ft33 = ft32.replaceAll("7️⃣", "7");
+var ft34 = ft33.replaceAll("8️⃣", "8");
+var ft35 = ft34.replaceAll("9️⃣", "9");
+var ft36 = ft35.replaceAll("0️⃣", "0");
+var ft37 = ft36.replaceAll("❗", "!");
+var ft38 = ft37.replaceAll("❓", "?");
+var ft39 = ft38.replaceAll("👎", "-");
+var ft40 = ft39.replaceAll("👍", "+");
+var ft41 = ft40.replaceAll("⚫", ".");
+var ft42 = ft41.replaceAll("⚪", ",");
+var ft43 = ft41.replaceAll("💬", "=");
+
+document.getElementById("input").value = ft43;
 }
 </script>
